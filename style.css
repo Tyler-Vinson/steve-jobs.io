@@ -6,14 +6,14 @@
   height: 280px;
   margin-bottom: 20px;
 }
-.image-container-steve-head img {
+.headshot-image {
   width: 280px;
   height: 280px;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-body {
+.page-body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -21,37 +21,7 @@ body {
   background: radial-gradient(ellipse, black, black, black, white, antiquewhite);
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #666666;
-  width: 700px;
-  border: 1px solid antiquewhite;
-  border-radius: 10px;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  color: antiquewhite;
-
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  background-color: #666666;
-  width: 400px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -20px;
-  border: 1px solid antiquewhite;
-  border-radius: 10px;
-}
-
-p {
+.intro-text {
   max-width: 700px;
   padding: 0 20px;
   line-height: 1.7;
@@ -67,7 +37,7 @@ p {
   color: antiquewhite;
 }
 
-img {
+.content-image {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -94,7 +64,7 @@ img {
   text-align: center;
 }
 
-.image-column img {
+.image-column .content-image {
   width: 100%;
 }
 
@@ -104,7 +74,7 @@ img {
   text-align: center;
 }
 
-.video-container video {
+.page-video {
   display: block;
   width: 100%;
   border: 1px solid antiquewhite;
@@ -122,35 +92,32 @@ img {
   font-weight: 700;
 }
 
-figcaption {
+.image-caption,
+.headshot-caption {
   font-size: 14px;
   color: antiquewhite;
   margin-top: 12px;
 }
 
-a:link {
+.resource-link:link {
   color: white;
   text-decoration: none;
 }
 
-a:visited {
+.resource-link:visited {
   color: black;
 }
 
-a:hover {
+.resource-link:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
+  .resource-heading {
     font-size: 20px;
   }
 }
-ul {
+.resource-list {
   font-weight: 600;
   text-align: center;
   background-color: #666666;
@@ -167,17 +134,17 @@ ul {
   border: 1px solid antiquewhite;
 }
 
-ul h2 {
+.resource-heading {
   margin: 0 0 12px;
   font-size: 24px;
   line-height: 1.2;
 }
 
-ul li {
+.resource-item {
   margin-bottom: 8px;
   line-height: 1.4;
 }
-table {
+.accomplishments-table {
   width: 25%;
   border-collapse: collapse;
   border: 5px solid antiquewhite;
@@ -187,9 +154,10 @@ table {
   background-color: #666666;
   color: antiquewhite;
 }
-tr {
+.table-row {
   text-align: center;
 }
-td {
+.table-cell,
+.table-heading {
   border: 1px solid antiquewhite;
 }
